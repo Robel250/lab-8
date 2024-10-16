@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>About color</h3>
+    <p id="result"></p>
+    <h3>personal INFO</h3>
+    <p id="result1"></p>
+    <h3>settings</h3>
+    <p id="result2"></p>
+    <script>
+        const color=['red','green','blue',]
+        const [ firstcolor,secondcolor, thircolor]=color;
+        document.getElementById('result').innerHTML=firstcolor+"<br>"+secondcolor+"<br>"+thircolor;
+
+
+
+        const person={name:'alice',age:25,city:'WonderLand' }
+        const {name, age ,city}= person
+        document.getElementById("result1").innerHTML="NAME: " +name+"<br>"+"AGE: "+ age +"<br>" +"city: "+city;
+
+
+
+         const settings={theme:'dark',language:'english',}
+       const {theme,language,mode='light'}=settings
+       document.getElementById("result2").innerHTML="THEMA: " +theme+"<br>"+"LANGUAGE: "+ language +"<br>" +"MODE: "+mode;
+    </script>
+</body>
+</html>
